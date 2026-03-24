@@ -79,7 +79,7 @@
                 >
                   <div class="card-image-wrap">
                     <img
-                      :src="project.image"
+                      :src="a(project.image)"
                       :alt="project.title"
                       class="w-100"
                       loading="lazy"
@@ -145,6 +145,8 @@
 <script setup>
 import { experience, getProjectsByCompany } from "~/data/projects";
 
+const a = useAssetUrl();
+
 useHead({
   title: "Experience & Projects — Marwan Maher Mostafa",
 });
@@ -155,12 +157,12 @@ useSeoMeta({
   ogTitle: "Experience & Projects — Marwan Maher Mostafa",
   ogDescription:
     "15+ production projects — enterprise dashboards, AR/AI experiences, and full-stack applications.",
-  ogImage: "/assets/images/marwan.jpeg",
+  ogImage: a("/assets/images/marwan.jpeg"),
   ogUrl: "https://marwanmaher.dev/projects",
   twitterTitle: "Experience & Projects — Marwan Maher Mostafa",
   twitterDescription:
     "15+ production projects — enterprise dashboards, AR/AI experiences, and full-stack applications.",
-  twitterImage: "/assets/images/marwan.jpeg",
+  twitterImage: a("/assets/images/marwan.jpeg"),
 });
 
 const phaseColor = (id) => {

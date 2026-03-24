@@ -10,7 +10,7 @@
               <div class="logo">
                 <NuxtLink href="/"
                   ><img
-                    src="/assets/images/logos/logo.svg"
+                    :src="a('/assets/images/logos/logo.svg')"
                     alt="Marwan Maher"
                     title="Marwan Maher"
                     style="max-height: 38px"
@@ -33,7 +33,7 @@
     <!-- Error Section Start -->
     <section
       class="error-section pt-220 rpt-120 pb-100 rpb-80 rel z-1"
-      style="background-image: url(assets/images/hero/hero-two-bg.png)"
+      :style="`background-image: url(${a('/assets/images/hero/hero-two-bg.png')})`"
     >
       <div class="container container-1290">
         <div class="row align-items-center">
@@ -47,13 +47,22 @@
                 >Go to Home <i class="far fa-arrow-right"></i
               ></NuxtLink>
               <div class="social-style-four d-flex mt-60 rmt-35">
-                <a href="https://www.linkedin.com/in/marwan-maher-b11628227/" target="_blank" rel="noopener"
+                <a
+                  href="https://www.linkedin.com/in/marwan-maher-b11628227/"
+                  target="_blank"
+                  rel="noopener"
                   ><i class="fab fa-linkedin-in"></i> <span>LinkedIn</span></a
                 >
-                <a href="https://www.facebook.com/marwan.maher.50746" target="_blank" rel="noopener"
+                <a
+                  href="https://www.facebook.com/marwan.maher.50746"
+                  target="_blank"
+                  rel="noopener"
                   ><i class="fab fa-facebook-f"></i> <span>Facebook</span></a
                 >
-                <a href="https://twitter.com/MElg3fre" target="_blank" rel="noopener"
+                <a
+                  href="https://twitter.com/MElg3fre"
+                  target="_blank"
+                  rel="noopener"
                   ><i class="fab fa-twitter"></i> <span>Twitter</span></a
                 >
               </div>
@@ -61,10 +70,7 @@
           </div>
           <div class="col-lg-7">
             <div class="error-image wow zoomIn delay-0-2s">
-              <img
-                src="/assets/images/background/404-error.png"
-                alt="Error"
-              />
+              <img :src="a('/assets/images/background/404-error.png')" alt="Error" />
             </div>
           </div>
         </div>
@@ -75,6 +81,8 @@
 </template>
 
 <script setup>
+const a = useAssetUrl();
+
 const props = defineProps({
   error: Object,
 });

@@ -9,7 +9,7 @@
           <div class="col-lg-6">
             <div class="about-four-image wow fadeInUp delay-0-2s">
               <img
-                src="/assets/images/marwan2.jpg"
+                :src="a('/assets/images/marwan2.jpg')"
                 alt="Marwan Maher Mostafa"
                 loading="lazy"
                 width="570"
@@ -164,50 +164,50 @@
           <div class="col-lg-7">
             <div class="my-skill-images wow fadeInRight delay-0-2s">
               <div class="skill-item">
-                <img src="/assets/images/skills/skill4.png" alt="Vue.js" /><span
+                <img :src="a('/assets/images/skills/skill4.png')" alt="Vue.js" /><span
                   class="text"
                   >Vue 3 / Nuxt</span
                 >
               </div>
               <div class="skill-item">
-                <img src="/assets/images/skills/skill4.png" alt="React" /><span
+                <img :src="a('/assets/images/skills/skill4.png')" alt="React" /><span
                   class="text"
                   >React / Next.js</span
                 >
               </div>
               <div class="skill-item">
                 <img
-                  src="/assets/images/skills/skill1.png"
+                  :src="a('/assets/images/skills/skill1.png')"
                   alt="TypeScript"
                 /><span class="text">TypeScript</span>
               </div>
               <div class="skill-item">
                 <img
-                  src="/assets/images/skills/skill2.png"
+                  :src="a('/assets/images/skills/skill2.png')"
                   alt="Tailwind"
                 /><span class="text">Tailwind CSS</span>
               </div>
               <div class="skill-item">
                 <img
-                  src="/assets/images/skills/skill8.png"
+                  :src="a('/assets/images/skills/skill8.png')"
                   alt="Three.js"
                 /><span class="text">Three.js</span>
               </div>
               <div class="skill-item">
-                <img src="/assets/images/skills/skill9.png" alt="TF.js" /><span
+                <img :src="a('/assets/images/skills/skill9.png')" alt="TF.js" /><span
                   class="text"
                   >TensorFlow.js</span
                 >
               </div>
               <div class="skill-item">
-                <img src="/assets/images/skills/skill3.png" alt="Charts" /><span
+                <img :src="a('/assets/images/skills/skill3.png')" alt="Charts" /><span
                   class="text"
                   >ApexCharts</span
                 >
               </div>
               <div class="skill-item">
                 <img
-                  src="/assets/images/skills/skill1.png"
+                  :src="a('/assets/images/skills/skill1.png')"
                   alt="Laravel"
                 /><span class="text">Laravel</span>
               </div>
@@ -222,6 +222,8 @@
 <script setup>
 import { experience } from "~/data/projects";
 
+const a = useAssetUrl();
+
 useHead({
   title: "About Me — Marwan Maher Mostafa",
 });
@@ -232,11 +234,11 @@ useSeoMeta({
   ogTitle: "About Me — Marwan Maher Mostafa",
   ogDescription:
     "From front-end developer to project manager. 15+ production apps at SIPRC, Digitee, IDAAM, and freelance.",
-  ogImage: "/assets/images/marwan2.jpg",
+  ogImage: a("/assets/images/marwan2.jpg"),
   ogUrl: "https://marwanmaher.dev/about",
   twitterTitle: "About Me — Marwan Maher Mostafa",
   twitterDescription:
     "From front-end developer to project manager. 15+ production apps at SIPRC, Digitee, IDAAM, and freelance.",
-  twitterImage: "/assets/images/marwan2.jpg",
+  twitterImage: a("/assets/images/marwan2.jpg"),
 });
 </script>

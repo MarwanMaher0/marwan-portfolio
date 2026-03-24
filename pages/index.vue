@@ -44,10 +44,12 @@
           <div class="rotated-man-wrap">
             <div class="rotated-man">
               <img
-                src="/assets/images/marwan.jpeg"
-                alt="Marwan Maher Mostafa"                loading="lazy"
+                :src="a('/assets/images/marwan.jpeg')"
+                alt="Marwan Maher Mostafa"
+                loading="lazy"
                 width="570"
-                height="570"              />
+                height="570"
+              />
             </div>
           </div>
         </div>
@@ -55,12 +57,12 @@
       <div class="hero-shapes">
         <img
           class="shape one"
-          src="/assets/images/hero/hero-shape1.png"
+          :src="a('/assets/images/hero/hero-shape1.png')"
           alt="Shape"
         />
         <img
           class="shape two"
-          src="/assets/images/hero/hero-shape2.png"
+          :src="a('/assets/images/hero/hero-shape2.png')"
           alt="Shape"
         />
       </div>
@@ -115,7 +117,7 @@
               <div class="col-lg-6">
                 <div class="about-four-image wow fadeInUp delay-0-4s">
                   <img
-                    src="/assets/images/marwan2.jpg"
+                    :src="a('/assets/images/marwan2.jpg')"
                     alt="Marwan Maher Mostafa"
                   />
                 </div>
@@ -211,38 +213,38 @@
           <div class="col-lg-7">
             <div class="my-skill-images wow fadeInRight delay-0-2s">
               <div class="skill-item">
-                <img src="/assets/images/skills/skill4.png" alt="Vue.js" /><span
+                <img :src="a('/assets/images/skills/skill4.png')" alt="Vue.js" /><span
                   class="text"
                   >Vue 3 / Nuxt</span
                 >
               </div>
               <div class="skill-item">
-                <img src="/assets/images/skills/skill4.png" alt="React" /><span
+                <img :src="a('/assets/images/skills/skill4.png')" alt="React" /><span
                   class="text"
                   >React / Next.js</span
                 >
               </div>
               <div class="skill-item">
                 <img
-                  src="/assets/images/skills/skill1.png"
+                  :src="a('/assets/images/skills/skill1.png')"
                   alt="TypeScript"
                 /><span class="text">TypeScript</span>
               </div>
               <div class="skill-item">
                 <img
-                  src="/assets/images/skills/skill2.png"
+                  :src="a('/assets/images/skills/skill2.png')"
                   alt="Tailwind"
                 /><span class="text">Tailwind CSS</span>
               </div>
               <div class="skill-item">
                 <img
-                  src="/assets/images/skills/skill8.png"
+                  :src="a('/assets/images/skills/skill8.png')"
                   alt="Three.js"
                 /><span class="text">Three.js / WebGL</span>
               </div>
               <div class="skill-item">
                 <img
-                  src="/assets/images/skills/skill9.png"
+                  :src="a('/assets/images/skills/skill9.png')"
                   alt="TensorFlow"
                 /><span class="text">TensorFlow.js</span>
               </div>
@@ -274,7 +276,13 @@
                 class="image wow fadeInUp delay-0-2s"
                 style="border-radius: 10px; overflow: hidden"
               >
-                <img :src="project.image" :alt="project.title" loading="lazy" width="280" height="350" />
+                <img
+                  :src="a(project.image)"
+                  :alt="project.title"
+                  loading="lazy"
+                  width="280"
+                  height="350"
+                />
                 <NuxtLink
                   :href="`/project-details?slug=${project.slug}`"
                   class="project-btn"
@@ -326,6 +334,8 @@
 <script setup>
 import { allProjects, getProjectsByCompany } from "~/data/projects";
 
+const a = useAssetUrl();
+
 useHead({
   title: "Marwan Maher Mostafa | Developer & Project Manager",
 });
@@ -336,12 +346,12 @@ useSeoMeta({
   ogTitle: "Marwan Maher Mostafa | Developer & Project Manager",
   ogDescription:
     "Developer & Project Manager with 15+ production apps. Vue.js, React, TypeScript, AR/AI, enterprise dashboards.",
-  ogImage: "/assets/images/marwan.jpeg",
+  ogImage: a("/assets/images/marwan.jpeg"),
   ogUrl: "https://marwanmaher.dev",
   twitterTitle: "Marwan Maher Mostafa | Developer & Project Manager",
   twitterDescription:
     "Developer & Project Manager with 15+ production apps. Vue.js, React, TypeScript, AR/AI, enterprise dashboards.",
-  twitterImage: "/assets/images/marwan.jpeg",
+  twitterImage: a("/assets/images/marwan.jpeg"),
 });
 
 const companyLabels = {

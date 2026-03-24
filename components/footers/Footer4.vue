@@ -1,9 +1,7 @@
 <template>
   <footer
     class="main-footer footer-four pt-100 rel bgs-cover z-1"
-    style="
-      background-image: url(assets/images/footer/footer-bg-shape-three.png);
-    "
+    :style="`background-image: url(${a('/assets/images/footer/footer-bg-shape-three.png')})`"
   >
     <div class="container container-1290 pb-40">
       <div class="row justify-content-between">
@@ -25,10 +23,38 @@
             <h5 class="footer-title">Follow Me</h5>
             <div class="footer-widget widget_nav_menu">
               <ul class="list-style-two">
-                <li><a href="https://www.linkedin.com/in/marwan-maher-b11628227/" target="_blank" rel="noopener">LinkedIn</a></li>
-                <li><a href="https://www.facebook.com/marwan.maher.50746" target="_blank" rel="noopener">Facebook</a></li>
-                <li><a href="https://twitter.com/MElg3fre" target="_blank" rel="noopener">Twitter / X</a></li>
-                <li><a href="https://www.instagram.com/marwan_elg3fre/" target="_blank" rel="noopener">Instagram</a></li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/marwan-maher-b11628227/"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/marwan.maher.50746"
+                    target="_blank"
+                    rel="noopener"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/MElg3fre"
+                    target="_blank"
+                    rel="noopener"
+                    >Twitter / X</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/marwan_elg3fre/"
+                    target="_blank"
+                    rel="noopener"
+                    >Instagram</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -37,14 +63,21 @@
           <div class="footer-widget newsletter-widget wow fadeInUp delay-0-6s">
             <h5 class="footer-title">Get In Touch</h5>
             <p class="mb-15">
-              <a href="mailto:Marwanmaher635@gmail.com" class="text-white">Marwanmaher635@gmail.com</a>
+              <a href="mailto:Marwanmaher635@gmail.com" class="text-white"
+                >Marwanmaher635@gmail.com</a
+              >
             </p>
             <p class="mb-20">
-              <a href="tel:+201025027019" class="text-white">+20 102 502 7019</a>
+              <a href="tel:+201025027019" class="text-white"
+                >+20 102 502 7019</a
+              >
             </p>
             <div class="footer-logo pt-15">
               <NuxtLink href="/"
-                ><img src="/assets/images/logos/logo.svg" alt="Marwan Maher" style="max-height: 40px;"
+                ><img
+                  :src="a('/assets/images/logos/logo.svg')"
+                  alt="Marwan Maher"
+                  style="max-height: 40px"
               /></NuxtLink>
             </div>
           </div>
@@ -65,5 +98,9 @@
 <script>
 export default {
   name: "Footer4",
+  setup() {
+    const a = useAssetUrl();
+    return { a };
+  },
 };
 </script>

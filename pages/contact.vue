@@ -25,40 +25,95 @@
                   <div class="our-location-address mb-40">
                     <h5>Email &amp; Phone</h5>
                     <p>Reach out directly for projects and collaboration.</p>
-                    <a class="mailto" href="mailto:Marwanmaher635@gmail.com">Marwanmaher635@gmail.com</a><br />
-                    <a class="callto" href="tel:+201025027019"><i class="fas fa-phone"></i> +20 102 502 7019</a>
+                    <a class="mailto" href="mailto:Marwanmaher635@gmail.com"
+                      >Marwanmaher635@gmail.com</a
+                    ><br />
+                    <a class="callto" href="tel:+201025027019"
+                      ><i class="fas fa-phone"></i> +20 102 502 7019</a
+                    >
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="our-location-address mb-40">
                     <h5>Location</h5>
                     <p>Assiut, Egypt</p>
-                    <p class="mt-10">Available for remote work worldwide and on-site in Saudi Arabia.</p>
+                    <p class="mt-10">
+                      Available for remote work worldwide and on-site in Saudi
+                      Arabia.
+                    </p>
                   </div>
                 </div>
               </div>
               <h4>Follow Me</h4>
               <div class="social-style-two pt-15">
-                <a href="https://www.linkedin.com/in/marwan-maher-b11628227/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.facebook.com/marwan.maher.50746" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/MElg3fre" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/marwan_elg3fre/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:Marwanmaher635@gmail.com"><i class="far fa-envelope"></i></a>
+                <a
+                  href="https://www.linkedin.com/in/marwan-maher-b11628227/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/marwan.maher.50746"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://twitter.com/MElg3fre"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/marwan_elg3fre/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="mailto:Marwanmaher635@gmail.com"
+                  ><i class="far fa-envelope"></i
+                ></a>
               </div>
             </div>
           </div>
           <div class="col-xl-5 col-lg-6">
-            <div class="contact-page-form form-style-one wow fadeInUp delay-0-2s">
+            <div
+              class="contact-page-form form-style-one wow fadeInUp delay-0-2s"
+            >
               <div class="section-title mb-35">
                 <span class="sub-title mb-15">Project Inquiry</span>
                 <h3>Send a message</h3>
               </div>
 
-              <div v-if="formStatus === 'success'" class="alert" style="background: rgba(0, 212, 170, 0.15); border: 1px solid #00d4aa; color: #00d4aa; padding: 15px 20px; border-radius: 8px; margin-bottom: 20px;">
-                <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+              <div
+                v-if="formStatus === 'success'"
+                class="alert"
+                style="
+                  background: rgba(0, 212, 170, 0.15);
+                  border: 1px solid #00d4aa;
+                  color: #00d4aa;
+                  padding: 15px 20px;
+                  border-radius: 8px;
+                  margin-bottom: 20px;
+                "
+              >
+                <i class="fas fa-check-circle"></i> Message sent successfully!
+                I'll get back to you soon.
               </div>
-              <div v-if="formStatus === 'error'" class="alert" style="background: rgba(255, 107, 107, 0.15); border: 1px solid #ff6b6b; color: #ff6b6b; padding: 15px 20px; border-radius: 8px; margin-bottom: 20px;">
-                <i class="fas fa-exclamation-circle"></i> Something went wrong. Please try again or email me directly.
+              <div
+                v-if="formStatus === 'error'"
+                class="alert"
+                style="
+                  background: rgba(255, 107, 107, 0.15);
+                  border: 1px solid #ff6b6b;
+                  color: #ff6b6b;
+                  padding: 15px 20px;
+                  border-radius: 8px;
+                  margin-bottom: 20px;
+                "
+              >
+                <i class="fas fa-exclamation-circle"></i> Something went wrong.
+                Please try again or email me directly.
               </div>
 
               <form
@@ -71,32 +126,71 @@
                   <div class="col-md-12">
                     <div class="form-group">
                       <label for="name"><i class="far fa-user"></i></label>
-                      <input type="text" id="name" v-model="form.name" class="form-control" placeholder="Your Name" required />
+                      <input
+                        type="text"
+                        id="name"
+                        v-model="form.name"
+                        class="form-control"
+                        placeholder="Your Name"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
                       <label for="email"><i class="far fa-envelope"></i></label>
-                      <input type="email" id="email" v-model="form.email" class="form-control" placeholder="Your Email" required />
+                      <input
+                        type="email"
+                        id="email"
+                        v-model="form.email"
+                        class="form-control"
+                        placeholder="Your Email"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label for="subject"><i class="far fa-briefcase"></i></label>
-                      <input type="text" id="subject" v-model="form.subject" class="form-control" placeholder="Project Type" required />
+                      <label for="subject"
+                        ><i class="far fa-briefcase"></i
+                      ></label>
+                      <input
+                        type="text"
+                        id="subject"
+                        v-model="form.subject"
+                        class="form-control"
+                        placeholder="Project Type"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
                       <label for="message"><i class="far fa-pencil"></i></label>
-                      <textarea id="message" v-model="form.message" class="form-control" rows="3" placeholder="Tell me about your project" required></textarea>
+                      <textarea
+                        id="message"
+                        v-model="form.message"
+                        class="form-control"
+                        rows="3"
+                        placeholder="Tell me about your project"
+                        required
+                      ></textarea>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group pt-5 mb-0">
-                      <button type="submit" class="theme-btn style-two w-100" :disabled="sending">
-                        <span v-if="sending"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
-                        <span v-else>Send Message <i class="far fa-arrow-right"></i></span>
+                      <button
+                        type="submit"
+                        class="theme-btn style-two w-100"
+                        :disabled="sending"
+                      >
+                        <span v-if="sending"
+                          ><i class="fas fa-spinner fa-spin"></i>
+                          Sending...</span
+                        >
+                        <span v-else
+                          >Send Message <i class="far fa-arrow-right"></i
+                        ></span>
                       </button>
                     </div>
                   </div>
@@ -175,11 +269,13 @@ export default {
             subject: this.form.subject,
             message: this.form.message,
           },
-          this.config.public.emailjsPublicKey
+          this.config.public.emailjsPublicKey,
         );
         this.formStatus = "success";
         this.form = { name: "", email: "", subject: "", message: "" };
-        setTimeout(() => { this.formStatus = null; }, 6000);
+        setTimeout(() => {
+          this.formStatus = null;
+        }, 6000);
       } catch (err) {
         this.formStatus = "error";
       } finally {

@@ -1,7 +1,7 @@
 <template>
   <section
     class="page-banner-area overlay pt-220 rpt-150 pb-170 rpb-100 rel z-1 bgs-cover text-center"
-    style="background-image: url(assets/images/banner/banner-bg.jpg)"
+    :style="`background-image: url(${a('/assets/images/banner/banner-bg.jpg')})`"
   >
     <div class="container">
       <div class="banner-inner rpt-10">
@@ -27,6 +27,10 @@ export default {
       type: String,
       default: "",
     },
+  },
+  setup() {
+    const a = useAssetUrl();
+    return { a };
   },
 };
 </script>

@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
+const base = "/marwan-portfolio/";
+
 export default defineNuxtConfig({
   ssr: true,
   modules: ["nuxt-swiper"],
@@ -23,7 +25,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: "/marwan-portfolio/",
+    baseURL: base,
     head: {
       title: "Marwan Maher Mostafa | Developer & Project Manager",
       htmlAttrs: {
@@ -49,12 +51,12 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/svg+xml",
-          href: "/assets/images/favicon.svg",
+          href: `${base}assets/images/favicon.svg`,
         },
         {
           rel: "icon",
           type: "image/x-icon",
-          href: "/favicon.ico",
+          href: `${base}favicon.ico`,
         },
         {
           rel: "canonical",
@@ -73,13 +75,13 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
         },
-        { rel: "stylesheet", href: "/assets/css/flaticon.min.css" },
-        { rel: "stylesheet", href: "/assets/css/fontawesome-5.14.0.min.css" },
-        { rel: "stylesheet", href: "/assets/css/bootstrap.min.css" },
-        { rel: "stylesheet", href: "/assets/css/animate.min.css" },
-        { rel: "stylesheet", href: "/assets/css/style.css" },
-        { rel: "stylesheet", href: "/assets/css/custom.css" },
-        { rel: "manifest", href: "/manifest.json" },
+        { rel: "stylesheet", href: `${base}assets/css/flaticon.min.css` },
+        { rel: "stylesheet", href: `${base}assets/css/fontawesome-5.14.0.min.css` },
+        { rel: "stylesheet", href: `${base}assets/css/bootstrap.min.css` },
+        { rel: "stylesheet", href: `${base}assets/css/animate.min.css` },
+        { rel: "stylesheet", href: `${base}assets/css/style.css` },
+        { rel: "stylesheet", href: `${base}assets/css/custom.css` },
+        { rel: "manifest", href: `${base}manifest.json` },
       ],
     },
   },

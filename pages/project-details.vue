@@ -59,7 +59,7 @@
           "
         >
           <img
-            :src="project.image"
+            :src="a(project.image)"
             :alt="project.title"
             style="width: 100%; display: block"
             loading="lazy"
@@ -155,7 +155,7 @@
         <div class="next-prev-post pt-80 rpt-60 pb-80 rpb-60">
           <div v-if="prevProject" class="prev-post wow fadeInLeft delay-0-2s">
             <div class="image" style="border-radius: 8px; overflow: hidden">
-              <img :src="prevProject.image" :alt="prevProject.title" />
+              <img :src="a(prevProject.image)" :alt="prevProject.title" />
             </div>
             <div class="content">
               <h4>
@@ -192,7 +192,7 @@
               ></NuxtLink>
             </div>
             <div class="image" style="border-radius: 8px; overflow: hidden">
-              <img :src="nextProject.image" :alt="nextProject.title" />
+              <img :src="a(nextProject.image)" :alt="nextProject.title" />
             </div>
           </div>
           <div v-else class="next-post wow fadeInRight delay-0-2s">
@@ -217,6 +217,7 @@ import {
   experience,
 } from "~/data/projects";
 
+const a = useAssetUrl();
 const route = useRoute();
 const slug = computed(() => route.query.slug || allProjects[0].slug);
 const project = computed(() => getProjectBySlug(slug.value) || allProjects[0]);
@@ -262,11 +263,11 @@ useSeoMeta({
   description: () => project.value.description?.slice(0, 160),
   ogTitle: () => `${project.value.title} — Marwan Maher Mostafa`,
   ogDescription: () => project.value.subtitle,
-  ogImage: () => project.value.image,
+  ogImage: () => a(project.value.image),
   ogUrl: () => `https://marwanmaher.dev/project-details?slug=${slug.value}`,
   twitterTitle: () => `${project.value.title} — Marwan Maher Mostafa`,
   twitterDescription: () => project.value.subtitle,
-  twitterImage: () => project.value.image,
+  twitterImage: () => a(project.value.image),
 });
 </script>
 

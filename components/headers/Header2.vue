@@ -8,25 +8,28 @@
             <div class="logo">
               <NuxtLink href="/"
                 ><img
-                  src="/assets/images/logos/logo.svg"
+                  :src="a('/assets/images/logos/logo.svg')"
                   alt="Marwan Maher"
                   title="Marwan Maher"
-                  style="max-height: 38px;"
+                  style="max-height: 38px"
               /></NuxtLink>
             </div>
           </div>
 
           <div class="nav-outer ms-lg-auto clearfix">
             <!-- Main Menu -->
-            <nav class="main-menu navbar-expand-lg" aria-label="Main navigation">
+            <nav
+              class="main-menu navbar-expand-lg"
+              aria-label="Main navigation"
+            >
               <div class="navbar-header py-10">
                 <div class="mobile-logo">
                   <NuxtLink href="/">
                     <img
-                      src="/assets/images/logos/logo.svg"
+                      :src="a('/assets/images/logos/logo.svg')"
                       alt="Marwan Maher"
                       title="Marwan Maher"
-                      style="max-height: 34px;"
+                      style="max-height: 34px"
                     />
                   </NuxtLink>
                 </div>
@@ -72,7 +75,7 @@
             <div class="menu-sidebar">
               <button class="bg-transparent" @click="toggleSidebar()">
                 <img
-                  src="/assets/images/icons/toggler-white.svg"
+                  :src="a('/assets/images/icons/toggler-white.svg')"
                   alt="Toggler"
                 />
               </button>
@@ -94,6 +97,10 @@ export default {
       type: Boolean,
       default: false,
     },
+  },
+  setup() {
+    const a = useAssetUrl();
+    return { a };
   },
   methods: {
     toggleSidebar() {
