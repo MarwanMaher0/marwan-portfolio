@@ -234,11 +234,13 @@ useSeoMeta({
   ogTitle: "About Me — Marwan Maher Mostafa",
   ogDescription:
     "From front-end developer to project manager. 15+ production apps at SIPRC, Digitee, IDAAM, and freelance.",
-  ogImage: a("/assets/images/marwan2.jpg"),
-  ogUrl: "https://marwanmaher.dev/about",
+  ogImage: "https://marwanmaher0.github.io/assets/images/og-image.jpg",
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogUrl: "https://marwanmaher0.github.io/about",
   twitterTitle: "About Me — Marwan Maher Mostafa",
   twitterDescription:
     "From front-end developer to project manager. 15+ production apps at SIPRC, Digitee, IDAAM, and freelance.",
-  twitterImage: a("/assets/images/marwan2.jpg"),
+  twitterImage: "https://marwanmaher0.github.io/assets/images/og-image.jpg",
 });
 </script>

@@ -157,12 +157,14 @@ useSeoMeta({
   ogTitle: "Experience & Projects — Marwan Maher Mostafa",
   ogDescription:
     "15+ production projects — enterprise dashboards, AR/AI experiences, and full-stack applications.",
-  ogImage: a("/assets/images/marwan.jpeg"),
-  ogUrl: "https://marwanmaher.dev/projects",
+  ogImage: "https://marwanmaher0.github.io/assets/images/og-image.jpg",
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogUrl: "https://marwanmaher0.github.io/projects",
   twitterTitle: "Experience & Projects — Marwan Maher Mostafa",
   twitterDescription:
     "15+ production projects — enterprise dashboards, AR/AI experiences, and full-stack applications.",
-  twitterImage: a("/assets/images/marwan.jpeg"),
+  twitterImage: "https://marwanmaher0.github.io/assets/images/og-image.jpg",
 });
 
 const phaseColor = (id) => {

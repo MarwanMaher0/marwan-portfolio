@@ -234,10 +234,14 @@ export default {
       ogTitle: "Contact — Marwan Maher Mostafa",
       ogDescription:
         "Get in touch for projects, collaboration, or opportunities. Available for remote work worldwide.",
-      ogUrl: "https://marwanmaher.dev/contact",
+      ogImage: "https://marwanmaher0.github.io/assets/images/og-image.jpg",
+      ogImageWidth: 1200,
+      ogImageHeight: 630,
+      ogUrl: "https://marwanmaher0.github.io/contact",
       twitterTitle: "Contact — Marwan Maher Mostafa",
       twitterDescription:
         "Get in touch for projects, collaboration, or opportunities. Available for remote work worldwide.",
+      twitterImage: "https://marwanmaher0.github.io/assets/images/og-image.jpg",
     });
 
     const config = useRuntimeConfig();

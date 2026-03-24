@@ -346,12 +346,14 @@ useSeoMeta({
   ogTitle: "Marwan Maher Mostafa | Developer & Project Manager",
   ogDescription:
     "Developer & Project Manager with 15+ production apps. Vue.js, React, TypeScript, AR/AI, enterprise dashboards.",
-  ogImage: a("/assets/images/marwan.jpeg"),
-  ogUrl: "https://marwanmaher.dev",
+  ogImage: "https://marwanmaher0.github.io/assets/images/og-image.jpg",
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogUrl: "https://marwanmaher0.github.io",
   twitterTitle: "Marwan Maher Mostafa | Developer & Project Manager",
   twitterDescription:
     "Developer & Project Manager with 15+ production apps. Vue.js, React, TypeScript, AR/AI, enterprise dashboards.",
-  twitterImage: a("/assets/images/marwan.jpeg"),
+  twitterImage: "https://marwanmaher0.github.io/assets/images/og-image.jpg",
 });
 
 const companyLabels = {

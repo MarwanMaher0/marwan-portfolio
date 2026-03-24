@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       emailjsServiceId: "",
       emailjsTemplateId: "",
       emailjsPublicKey: "",
-      siteUrl: "https://marwanmaher.dev",
+      siteUrl: "https://marwanmaher0.github.io",
     },
   },
 
@@ -46,6 +46,10 @@ export default defineNuxtConfig({
         { property: "og:locale", content: "en_US" },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:creator", content: "@MElg3fre" },
+        { property: "og:image", content: "https://marwanmaher0.github.io/assets/images/og-image.jpg" },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { property: "og:url", content: "https://marwanmaher0.github.io" },
       ],
       link: [
         {
@@ -60,7 +64,7 @@ export default defineNuxtConfig({
         },
         {
           rel: "canonical",
-          href: "https://marwanmaher.dev",
+          href: "https://marwanmaher0.github.io",
         },
         {
           rel: "preconnect",

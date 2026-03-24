@@ -263,11 +263,13 @@ useSeoMeta({
   description: () => project.value.description?.slice(0, 160),
   ogTitle: () => `${project.value.title} — Marwan Maher Mostafa`,
   ogDescription: () => project.value.subtitle,
-  ogImage: () => a(project.value.image),
-  ogUrl: () => `https://marwanmaher.dev/project-details?slug=${slug.value}`,
+  ogImage: () => `https://marwanmaher0.github.io${a(project.value.image)}`,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogUrl: () => `https://marwanmaher0.github.io/project-details?slug=${slug.value}`,
   twitterTitle: () => `${project.value.title} — Marwan Maher Mostafa`,
   twitterDescription: () => project.value.subtitle,
-  twitterImage: () => a(project.value.image),
+  twitterImage: () => `https://marwanmaher0.github.io${a(project.value.image)}`,
 });
 </script>
 
