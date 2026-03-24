@@ -274,7 +274,11 @@
             <div class="project-item">
               <div
                 class="image wow fadeInUp delay-0-2s"
-                style="border-radius: 10px; overflow: hidden"
+                style="
+                  border-radius: 10px;
+                  overflow: hidden;
+                  aspect-ratio: 4 / 5;
+                "
               >
                 <img
                   :src="a(project.image)"
@@ -282,6 +286,11 @@
                   loading="lazy"
                   width="280"
                   height="350"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  "
                 />
                 <NuxtLink
                   :href="`/project-details?slug=${project.slug}`"
