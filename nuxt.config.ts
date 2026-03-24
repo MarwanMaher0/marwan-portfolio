@@ -23,6 +23,7 @@ export default defineNuxtConfig({
   },
 
   app: {
+    baseURL: "/marwan-portfolio/",
     head: {
       title: "Marwan Maher Mostafa | Developer & Project Manager",
       htmlAttrs: {
