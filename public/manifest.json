@@ -1,0 +1,16 @@
+{
+  "name": "Marwan Maher Mostafa — Developer & Project Manager",
+  "short_name": "Marwan Maher",
+  "description": "Portfolio of Marwan Maher Mostafa — Developer & Project Manager with 15+ production applications.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0b0f",
+  "theme_color": "#0b0b0f",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
